@@ -36,7 +36,7 @@ public class IMCTest
     public void testClasificarIMCDS() {
                 
         assertEquals("Delgadez severa", calculator.clasificarIMC(15.0));
-        assertEquals("Delgadez severa", calculator.clasificarIMC(14.99));
+        assertEquals("Delgadez severa", calculator.clasificarIMC(14.9));
     }
 
     
@@ -44,7 +44,8 @@ public class IMCTest
     public void testClasificarIMCDM() {
 
         assertEquals("Delgadez moderada", calculator.clasificarIMC(16.0));
-        assertEquals("Delgadez moderada", calculator.clasificarIMC(16.99));
+        assertEquals("Delgadez moderada", calculator.clasificarIMC(16.5));
+        assertEquals("Delgadez moderada", calculator.clasificarIMC(16.9));
         
         
     }
@@ -54,8 +55,8 @@ public class IMCTest
     public void testClasificarIMCDL() {
 
         assertEquals("Delgadez leve", calculator.clasificarIMC(17.0)); 
-        assertEquals("Delgadez leve", calculator.clasificarIMC(18.49));
-        assertEquals("Delgadez leve", calculator.clasificarIMC(17.5));
+        assertEquals("Delgadez leve", calculator.clasificarIMC(18.4));
+        assertEquals("Delgadez leve", calculator.clasificarIMC(18.0));
 
     }
 
@@ -63,17 +64,16 @@ public class IMCTest
     public void testClasificarIMCPN() {
 
         assertEquals("Peso normal", calculator.clasificarIMC(18.5));
-        assertEquals("Peso normal", calculator.clasificarIMC(24.99));  
-        assertEquals("Peso normal", calculator.clasificarIMC(22.5));
-        assertEquals("Peso normal", calculator.clasificarIMC(24.9));
+        assertEquals("Peso normal", calculator.clasificarIMC(24.9));  
+        assertEquals("Peso normal", calculator.clasificarIMC(24.0));
     }
 
     @Test
     public void testClasificarIMCS() {
 
         assertEquals("Sobrepeso", calculator.clasificarIMC(25.0));
-        assertEquals("Sobrepeso", calculator.clasificarIMC(29.99));
-        assertEquals("Sobrepeso", calculator.clasificarIMC(27.0));
+        assertEquals("Sobrepeso", calculator.clasificarIMC(29.9));
+        assertEquals("Sobrepeso", calculator.clasificarIMC(29.0));
         
     }
 
@@ -82,8 +82,8 @@ public class IMCTest
 
         
         assertEquals("Obesidad leve", calculator.clasificarIMC(30.0));
-        assertEquals("Obesidad leve", calculator.clasificarIMC(34.99));
-        assertEquals("Obesidad leve", calculator.clasificarIMC(33));
+        assertEquals("Obesidad leve", calculator.clasificarIMC(34.9));
+        assertEquals("Obesidad leve", calculator.clasificarIMC(34.0));
 
         
     }
@@ -92,8 +92,8 @@ public class IMCTest
     public void testClasificarIMCOMod() {
 
         assertEquals("Obesidad moderada", calculator.clasificarIMC(35.0));
-        assertEquals("Obesidad moderada", calculator.clasificarIMC(37));        
-        assertEquals("Obesidad moderada", calculator.clasificarIMC(39.99)); 
+        assertEquals("Obesidad moderada", calculator.clasificarIMC(39.0));        
+        assertEquals("Obesidad moderada", calculator.clasificarIMC(39.9)); 
 
     }
 
