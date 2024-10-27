@@ -21,9 +21,10 @@ public class App {
         System.out.println("Clasificación: " + categoria);
 
         sc.close();
-
+        
     }
+
+}
 
 
     
-}

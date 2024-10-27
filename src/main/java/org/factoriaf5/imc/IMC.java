@@ -12,7 +12,9 @@ public class IMC
 
     public String clasificarIMC(double imc) {
 
-        if (imc < 16) {
+        if (imc < 0) {
+            return "Valor fuera de rango"; 
+        } else if (imc < 16) {
             return "Delgadez severa";
         } else if (imc >= 16 && imc < 17) {
             return "Delgadez moderada";
@@ -27,8 +29,8 @@ public class IMC
         } else if (imc >= 35 && imc < 40) {
             return "Obesidad moderada";
         } else {
-            return "Obesidad mórbida";
+            return "Obesidad mórbida"; 
         }
-    }
 
+    }
 }
