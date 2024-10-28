@@ -13,13 +13,10 @@ public class App {
         System.out.println("Dime tu estatura");
         double estatura=sc.nextDouble();
         
-        double resultado=imc.calcularIMC(peso,estatura);
-        String categoria=imc.clasificarIMC(resultado);
+        String resultado=imc.calcularIMC(peso,estatura);
 
-
-        System.out.printf("Su IMC es: %.2f%n", resultado);
-        System.out.println("Clasificación: " + categoria);
-
+        System.out.println("Clasificación segun su IMC: " + resultado);
+       
         sc.close();
         
     }
